@@ -7,13 +7,15 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import {MatIconModule} from '@angular/material/icon';
+import { SidebarButtonDirective } from './sidebar-button.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     SearchComponent,
-    HomeComponent
+    HomeComponent,
+    SidebarButtonDirective
   ],
   imports: [
     BrowserModule,
