@@ -1,0 +1,22 @@
+<aside class="border w-full max-h-screen h-screen p-2 mr-2">
+  <div class="buttons rounded-md w-full bg-black-main py-1 px-2 text-subtitle">
+    <a [routerLink]="['/']" routerLinkActive="active">
+      <span
+        class="home flex flex-row m-3 hover:color-white"
+        [ngClass]="{ 'text-white': this.router.url === '/home' }"
+      >
+        <mat-icon fontIcon="home"></mat-icon>
+        <p class="pl-5 my-auto">Home</p>
+      </span>
+    </a>
+    <a [routerLink]="['/search']" routerLinkActive="active">
+      <span
+        class="home flex flex-row m-3"
+        [ngClass]="{ 'text-search': this.router.url === '/search' }"
+      >
+        <mat-icon fontIcon="search"></mat-icon>
+        <p class="pl-5 my-auto">Search</p>
+      </span>
+    </a>
+  </div>
+</aside>
